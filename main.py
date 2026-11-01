@@ -13,6 +13,7 @@ BOT_TOKEN = "9194764652:AAGiJDm3vf-7LxxIqgt-1som2NoF4uJKBkY"
 CHANNELS = ["@starstrawa"] # Ваши каналы
 ADMIN_USERNAME = "plsuy"
 
+WEBAPP_URL = "https://c9787347-star.github.io/halloween-bot/index.html"  # <--- ВОТ ЭТА СТРОКА
 bot = Bot(BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
 

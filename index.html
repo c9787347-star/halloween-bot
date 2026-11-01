@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎃 Stars Give NFT Trawa</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; min-height: 100vh; background: #0a0014; color: #fff; overflow: hidden; }
+    .halloween-bg { position: fixed; inset: 0; z-index: -1; background: radial-gradient(circle at 50% 50%, rgba(255,140,0,.3), transparent 50%), linear-gradient(180deg, #0a0014, #1a0033); }
+    .container { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; text-align:center; padding: 20px; }
+    .pumpkin { font-size: 120px; animation: pulse 2s infinite ease-in-out; filter: drop-shadow(0 0 30px orange); }
+    @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+    h1 { font-size:24px; margin:20px 0; color:#ff8c00; text-shadow: 0 0 15px #ff4500; }
+    .status { font-size:20px; margin:20px 0; color:#7CFC00; font-weight: bold; text-shadow: 0 0 10px #7CFC00; }
+</style>
+</head>
+<body>
+<div class="halloween-bg"></div>
+<div class="container">
+  <div class="pumpkin">🎃</div>
+  <h1>Хэллоуин розыгрыш</h1>
+  <div class="status">Вы участвуете! Удачи! 🍀</div>
+</div>
+<script>
+  Telegram.WebApp.expand();
+  Telegram.WebApp.BackButton.hide(); // Скрываем кнопку "Назад"
+</script>
+</body>
+</html>
